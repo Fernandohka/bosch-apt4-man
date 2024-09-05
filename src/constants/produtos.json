@@ -4,34 +4,44 @@
     "name": "Pão de Centeio de Espelta",
     "desc": "Feito com farinha de espelta, um tipo antigo de trigo, este pão tem um sabor ligeiramente adocicado e uma textura densa. É conhecido por seu perfil nutricional rico, contendo mais proteínas e fibras do que o trigo comum. ",
     "value": "20.00",
-    "image": "../../src/assets/Pão de Centeio de Espelta.jpg"
+    "image": "../../src/assets/Pão de Centeio de Espelta.jpg",
+    "categoria": "Pão",
+    "status": false
   },
   {
     "id": 2,
     "name": "Pão de Ervas de Provence",
     "desc": "Este pão é temperado com uma mistura de ervas típicas da região da Provença, na França, como tomilho, alecrim e lavanda. O sabor aromático é bastante distinto.",
     "value": "25.00",
-    "image": "../../src/assets/Pão de Ervas de Provence.jpg"
+    "image": "../../src/assets/Pão de Ervas de Provence.jpg",
+    "categoria": "Pão",
+    "status": true
   },
   {
     "id": 3,
     "name": "Pão de Mel de Centeio",
     "desc": "Um pão denso e levemente doce, feito com farinha de centeio e mel. É menos comum do que outros tipos de pão e tem um sabor profundo e robusto.",
     "value": "23.00",
-    "image": "../../src/assets/Pão de Mel de Centeio.jpg"
+    "image": "../../src/assets/Pão de Mel de Centeio.jpg",
+    "categoria": "Pão",
+    "status": true
   },
   {
     "id": 4,
     "name": "Pão de Miso",
     "desc": "Feito com pasta de miso, um condimento fermentado japonês, este pão tem um sabor umami e uma textura macia. É relativamente raro fora do Japão, mas está ganhando popularidade em algumas padarias especializadas.",
     "value": "30.00",
-    "image": "../../src/assets/Pão de Miso.jpg"
+    "image": "../../src/assets/Pão de Miso.jpg",
+    "categoria": "Pão",
+    "status": true
   },
   {
     "id": 5,
     "name": "Pão de Açafrão",
     "desc": "Este pão é infundido com açafrão, que lhe confere uma cor amarela vibrante e um sabor sutilmente terroso. Embora seja mais comum em algumas culturas do Oriente Médio e do sul da Ásia, é pouco conhecido em outras regiões.",
     "value": "25.00",
-    "image": "../../src/assets/Pão de Açafrão.jpg"
+    "image": "../../src/assets/Pão de Açafrão.jpg",
+    "categoria": "Pão",
+    "status": true
   }
 ]
