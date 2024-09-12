@@ -1,7 +1,6 @@
 import style from './App.module.css'
 import produtos from './constants/produtos.json'
-import React, { PureComponent } from 'react';
-import { LineChart, Line, BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 
 function Produtos() {
