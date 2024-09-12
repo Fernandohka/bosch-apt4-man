@@ -85,19 +85,20 @@ function App() {
       }
      {show === "map" &&
         <>
-      <h2>Mapa</h2>
-      <MapContainer center={[-25.4248819,-49.273013]} zoom={15} scrollWheelZoom={false} style={{width: "400px", height: "400px"}}>
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        <Marker position={[-25.4248819,-49.273013]}>
-          <Popup>
-            Senai
-          </Popup>
-        </Marker>
-      </MapContainer>
-         </>
+          <h2>Mapa</h2>
+          <MapContainer center={[-25.4248819,-49.273013]} zoom={15} scrollWheelZoom={false} style={{width: "400px", height: "400px"}}>
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
+
+            <Marker position={[-25.4248819,-49.273013]}>
+              <Popup>
+                Senai
+              </Popup>
+            </Marker>
+
+          </MapContainer>
+        </>
       }
     </div>
     </>
