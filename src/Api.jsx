@@ -43,9 +43,9 @@ function Api() {
                <input type="text" placeholder="nome" value={name} onChange={(event) => setName(event.target.value)}/>
             </div>
             <div className={style.CardBox}>
-            {data.map((item) => { 
+            {data.map((item, index) => { 
              return(
-              <div key={item.id}>
+              <div key={index}>
                 <CardApi name={item.name} species={item.species} gender={item.gender} image={item.image} type={item.type} status={item.status} />
                 <button onClick={() => {}}>Info</button>
               </div>
