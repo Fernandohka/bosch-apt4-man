@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import style from './App.module.css'
 import CardApi from './components/CardApi'
+import Modal from './Modal'
 import { api } from "./api/rmApi"
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
@@ -9,6 +10,7 @@ function Api() {
     const [data, setData] = useState([])
     const [page, setPage] = useState("")
     const [name, setName] = useState("")
+    const [modal, setModal] = useState()
 
     useEffect(() => {
         api.get(`/character/?page=${page}&name=${name}`).then((response) => {
@@ -37,6 +39,7 @@ function Api() {
     return (
         <div  className={style.wrapPage}>
           <ToastContainer/>
+          {modal !== undefined && <Modal data={data[modal]} close={() => setModal()}/>}
           <h2>Rick and Morty API</h2>
             <div>
                <input type="text" placeholder="1/43" value={page} onChange={(event) => setPage(event.target.value)}/>
@@ -47,7 +50,7 @@ function Api() {
              return(
               <div key={index}>
                 <CardApi name={item.name} species={item.species} gender={item.gender} image={item.image} type={item.type} status={item.status} />
-                <button onClick={() => {}}>Info</button>
+                <button onClick={() => {setModal(index)}}>Info</button>
               </div>
               )
            })}

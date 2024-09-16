@@ -30,3 +30,17 @@
   gap: 10px;
   justify-content: center;
 }
+
+.Modal {
+  background-color: #f5f5f5;
+  color: black;
+  width: 400px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  height: 350px;
+}
